@@ -5,7 +5,7 @@ This is a Github Action used to create and update your API documentation in post
 
 ### Requirements
  
- - Postman Api Token [generate a Postman API token](https://dream11.postman.co/settings/me/api-keys) ([Documentation](https://learning.postman.com/docs/developer/postman-api/authentication/))
+ - Postman Api Token [generate a Postman API token](https://go.postman.co/settings/me/api-keys) ([Documentation](https://learning.postman.com/docs/developer/postman-api/authentication/))
  - Add Api key to secrets in github [Documentation](https://docs.github.com/en/actions/reference/encrypted-secrets)
  - Create a workspace your team will use
 
@@ -21,7 +21,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: aanimesh23/openapi-publish-action@v1
+    - uses: animesh-agrawal-dev/openapi-publish-action@v1
       with:
         collectionName: Backend Apis
         workspaceName: Team Workspace

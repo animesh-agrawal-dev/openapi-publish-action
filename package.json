@@ -1,5 +1,5 @@
 {
-  "name": "@d11/openapi-publish-action",
+  "name": "openapi-publish-action",
   "version": "1.0.0",
   "description": "A Github Action responsible for publishing and syncing open api specification",
   "main": "index.js",

@@ -1,6 +1,6 @@
 name: Publish OpenApi Spec to Postman
 description: "This is a Github Action used to create and update your API documentation in postman using OpenApi Spec."
-author: Animesh Agrawal <aanimesh23@gmail.com>
+author: Animesh Agrawal
 branding:
   icon: package
   color: gray-dark
@@ -22,5 +22,5 @@ inputs: # user can input the name inside the name of user variable , description
     required: true
     default: ''
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'

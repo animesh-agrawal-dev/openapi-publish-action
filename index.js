@@ -112,7 +112,7 @@ const main = async () => {
         const openapiData = isUrl ? await getSpecFromUrl(openApiSpec) : getSpecFromFile(openApiSpec);
         core.debug(`isUrl ${openapiData}`)
         if (!collectionName || collectionName === '') {
-            const repositoryName = 'Test Swagger'//await repoName();
+            const repositoryName = repoName.sync();
             collectionName = `${repositoryName} Auto Generated`;
         }
         core.debug(`collection name ${collectionName}`)
